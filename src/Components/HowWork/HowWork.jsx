@@ -1,14 +1,11 @@
+import HeaderShare from "../HeaderShare/HeaderShare";
+
 export default function HowWork() {
   return (
     <>
       <section className="flex justify-center items-center flex-col py-16">
         <div className="text-center">
-          <button className="px-8 py-4 bg-[#1572D31A] rounded-lg font-medium text-sm mb-5">
-            HOW IT WORK
-          </button>
-          <p className="font-medium text-[38px] ">
-            Rent with following 3 working steps
-          </p>
+          <HeaderShare title={'HOW IT WORK'} subTitle={'Rent with following 3 working steps'}/>
         </div>
         <div className="flex gap-40 mt-25 flex-wrap justify-center">
           <div className="flex flex-col items-center">

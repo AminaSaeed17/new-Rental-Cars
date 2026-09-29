@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { carContext } from "../../Context/CarsContext";
 import CarCard from "../CarCard/CarCard";
 import { useNavigate } from "react-router-dom";
+import HeaderShare from "../HeaderShare/HeaderShare";
 
 export default function RentalCars() {
   const { cars } = useContext(carContext);
@@ -12,12 +13,7 @@ export default function RentalCars() {
     <>
       <section className="px-5 flex flex-col justify-center items-center gap-16">
         <div className="text-center">
-          <button className="px-8 py-4 bg-[#1572D31A] rounded-lg font-medium text-sm mb-5">
-            POPULAR RENTAL DEALS
-          </button>
-          <p className="font-medium text-[38px] ">
-            Most popular cars rental deals
-          </p>
+          <HeaderShare title={'POPULAR RENTAL DEALS'} subTitle={'Most popular cars rental deals'}/>
         </div>
         <div className="flex justify-center gap-8 flex-wrap">
           {currentCars?.map((car) => (

@@ -1,6 +1,7 @@
 import aboutImg1 from "../../assets/imges/landing-page/sec-6/Rectangle 8 (1).png";
 import aboutImg2 from "../../assets/imges/landing-page/sec-6/girl.png";
 import SliderModule from "react-slick";
+import HeaderShare from "../HeaderShare/HeaderShare";
 
 const Slider = SliderModule.default ?? SliderModule;
 
@@ -57,13 +58,7 @@ export default function AboutUs() {
   return (
     <section className="bg-bg-secondary flex flex-col gap-20 py-10 sm:py-14 lg:py-16 px-4 sm:px-6 md:px-10 overflow-hidden">
       <div className="flex flex-col items-center">
-        <button className="px-6 sm:px-8 py-3 bg-[#1572D31A] text-primary rounded-lg font-medium text-sm mb-5">
-          TESTIMONIALS
-        </button>
-
-        <p className="font-medium text-[24px] sm:text-[28px] md:text-[38px] text-[#252525]">
-          What people say about us?
-        </p>
+        <HeaderShare title={'TESTIMONIALS'} subTitle={'What people say about us?'}/>
       </div>
 
       <div className="[&_.slick-track]:flex [&_.slick-slide]:h-auto [&_.slick-slide>div]:h-full">

@@ -1,4 +1,5 @@
 import carSection from "../../assets/imges/landing-page/sec-5/Audi 1.png";
+import HeaderShare from "../HeaderShare/HeaderShare";
 
 export default function WhyChoose() {
   const features = [
@@ -42,15 +43,10 @@ export default function WhyChoose() {
         </div>
         
         <div className="w-full lg:w-1/2 lg:max-w-175 px-4 sm:px-8 lg:px-0 lg:pr-3 py-10 sm:py-14 lg:py-16">
-          <button className="px-6 sm:px-8 py-3 sm:py-4 bg-[#1572D31A] rounded-lg font-medium text-sm mb-5">
-            WHY CHOOSE US
-          </button>
+          
+          <HeaderShare title={'WHY CHOOSE US'} subTitle={'We offer the best experience with our rental deals'} />
 
-          <h2 className="font-semibold text-[24px] sm:text-[28px] md:text-[38px] leading-snug text-[#333333] mb-8 sm:mb-10">
-            We offer the best experience with our rental deals
-          </h2>
-
-          <div className="flex flex-col gap-6 sm:gap-10">
+          <div className="flex flex-col mt-10 gap-6 sm:gap-10">
             {features.map((f, i) => (
               <div key={i} className="flex gap-3 sm:gap-4 items-start">
                 <div className="w-12 h-12 sm:w-16 sm:h-16 shrink-0 rounded-lg bg-[#1572D31A] text-primary text-lg sm:text-xl flex items-center justify-center">

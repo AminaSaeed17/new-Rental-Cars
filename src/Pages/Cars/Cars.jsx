@@ -3,6 +3,7 @@ import Breadcrumb from "../../Components/Breadcrumb/Breadcrumb";
 import { carContext } from "../../Context/CarsContext";
 import CarCard from "../../Components/CarCard/CarCard";
 import Loading from "../../Components/Loading/Loading";
+import HeaderShare from "../../Components/HeaderShare/HeaderShare";
 
 export default function Cars() {
   const { cars, loading } = useContext(carContext);
@@ -95,13 +96,7 @@ export default function Cars() {
           </button>
         </div>
         <div className="text-center">
-          <button className="px-8 py-4 bg-[#1572D31A] rounded-lg font-medium text-sm mb-5">
-            POPULAR RENTAL DEALS
-          </button>
-
-          <p className="font-medium text-[38px]">
-            Most popular cars rental deals
-          </p>
+          <HeaderShare title={'POPULAR RENTAL DEALS'} subTitle={'Most popular cars rental deals'}/>
         </div>
 
         <div className="flex justify-center gap-8 gap-y-16 flex-wrap">
